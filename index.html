@@ -12,21 +12,24 @@
 <body>
     <header>
         <div class="user">
-            <img src="images/jiji.jpg" alt="">
+            <div class="coin">
+                <img src="images/jiji.jpg" alt="">
+            </div>
+            <!-- <img src="images/jiji.jpg" alt=""> -->
             <h3 class="name">Jihene Gharsalli</h3>
-            <p class="post">Developpeuse Web/Mobile/RA</p>
+            <p class="post">Product Owner</p>
         </div>
 
         <nav class="navbar">
-            <ul>
-                <li><a href="#home">A propos de Jihene</a></li>
+            <ul style="list-style: none;">
+                <li class="custom-li"><a href="#home">A propos de Jihene</a></li>
                 <!-- <li><a href="#about">A propos de moi</a></li> -->
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#activites">Activités</a></li> 
-                <li><a href="#certification">Certification</a></li> 
-                <li><a href="#contact">Contact</a></li>
+                <li class="custom-li"><a href="#formation">Formation</a></li>
+                <li class="custom-li"><a href="#competences">Compétences</a></li>
+                <li class="custom-li"><a href="#projets">Projets</a></li>
+                <li class="custom-li"><a href="#activites">Activités</a></li> 
+                <li class="custom-li"><a href="#certification">Certification</a></li> 
+                <li class="custom-li"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -37,12 +40,17 @@
 
     <div class="scrollable-div">
         <section class="home" id="home">
-            <img src="images/logoblan.png" alt="" class="logo1">
+            <div style="display: flex; justify-content: right; align-items: center;"> 
+ <img src="images/logoblan.png" alt="" class="logo1">
+            </div>
+           
             <h3>Bonjour !</h3>
             <h1>Je suis <span>Jihene Gharsalli</span></h1>
-            <p>Mon profil se caractérise par ma dynamisme et ma passion pour le développement et le codage. Les défis m'attirent particulièrement, et je m'engage pleinement à les aborder avec enthousiasme. Mon objectif est de réussir dans ledomaine du développement en mettant à profit mes compétences endéveloppement et en codage pour concevoir des stratégies efficaces et innovantes</p>
+            <p>Product Owner en formation d’ingénieur informatique, avec une expérience concrète en gestion de projets digitaux, UX/UI et coordination Agile/Scrum. Passionnée par l’innovation et résolument orientée utilisateur, je combine vision produit, créativité et rigueur pour piloter des solutions digitales performantes et à forte valeur ajoutée.</p>
             <!-- <a href="#about"><button class="btn">about me <i class="fas fa-user"></i> </button></a> -->
-            <a href="images/CV vf.pdf" download ><button class="btn" style="margin-left: 300px;">Download CV <i class="fas fa-download"></i></button></a>
+             <div style="display: flex; justify-content: center; align-items: center; margin-top: 2rem;"> 
+                <a href="files/CV.pdf" download ><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
+            </div>
         </section>
         <!-- <section class="about" id="about">
             <h1 class="heading"> <span>about</span> Me</h1>
@@ -68,6 +76,14 @@
         <section class="formation" id="formation">
             <h1 class="heading"> Ma <span>Formation</span></h1>
             <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Present</span>
+                    <h3 style="text-transform: uppercase;">Cycle d’ingénieur en Cyber Sécurité</h3>
+                    <p>
+                        Polytechnique - Sousse
+                        </p>
+                </div>
                 <div class="box">
                     <i class="fas fa-graduation-cap"></i>
                     <span>2024</span>
@@ -206,6 +222,22 @@
                             <h3>Unity</h3>
                         </div>
                     </div>
+                    <div class="box">
+                        <div class="immg">
+                            <span><img src="images/jira.png" alt="" style="width: 60%;"></span>
+                        </div>  
+                        <div class="titre">
+                            <h3>Jira</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="immg">
+                            <span><img src="images/Figma-logo.svg" alt="" style="width: 60%;"></span>
+                        </div>  
+                        <div class="titre">
+                            <h3>Figma</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -302,7 +334,7 @@
         </section> 
         <section class="activites" id="activites">
             <h1 class="heading"> Mes <span>activiés</span></h1>
-            <span><img src="images/ieee.png" alt="" style="width: 25%; margin-left:40rem ; margin-top:3rem"></span>
+            <img src="images/ieee.png" alt="" style="width: 25%; margin: auto; margin-top:3rem;display: block;">
             <div class="box-container" style="margin-top: 0rem;">
                 <div class="box" onclick="openImageModal('images/bo.jpg')">
                     <img src="images/bo.jpg" alt="Certificate Git">
@@ -337,8 +369,7 @@
                 </div>
                 
             </div>
-
-            <span><img src="images/la.png" alt="" style="width: 35%; margin-left:38rem ; margin-top:-9rem ;margin-bottom:-9rem"></span>
+            <img src="images/la.png" alt="" style="width: 25%; margin: auto; display: block;">
             <div class="box-container" style="margin-top: 0rem;">
                 <div class="box" onclick="openImageModal('images/a1.jpeg')">
                     <img src="images/a1.jpeg" alt="Certificate Git">
@@ -396,7 +427,16 @@
                 <div class="box" onclick="openImageModal('images/WhatsApp Image 2023-11-23 à 19.44.33_135141e5.jpg')">
                     <img src="images/WhatsApp Image 2023-11-23 à 19.44.33_135141e5.jpg" alt="Certificate 4">
                 </div>
-                
+                <div class="box" onclick="openImageModal('images/udemy.png')">
+                    <img src="images/udemy.png" alt="Certificate 5">
+                </div>
+                <div class="box" onclick="openImageModal('images/iastam.png')">
+                    <img src="images/iastam.png" alt="Certificate 6">
+                </div>
+
+                <div class="box" onclick="openImageModal('images/udmy2.png')">
+                    <img src="images/udmy2.png" alt="Certificate 7">
+                </div>
             </div>
 
             <div class="lightbox" id="image-modal">
@@ -413,11 +453,11 @@
                 <div class="content"style="margin-left: 340px; margin-top:100px">
                     <!-- <h3 class="title">Contact informations</h3> -->
                     <div class="info">
-                        <h3><a href="mailto:gharsalli.jihene@isitc.u-sousse.tn" style="color: #eee;"><i class="fas fa-envelope"></i>gharsalli.jihene@isitc.u-sousse.tn</a></h3>
-                        <h3><i class="fas fa-phone"></i>+216 52 031 040</h3>
+                        <h3><a href="mailto:ihene.gharsallii@gmail.com" style="color: #eee;"><i class="fas fa-envelope"></i>jihene.gharsallii@gmail.com</a></h3>
+                        <h3><a href="tel:+21652031040" style="color: #eee;"><i class="fas fa-phone"></i>+216 52 031 040</a></h3>
                         <h3><i class="fas fa-map-marker-alt"></i>Tunisie , Sousse</h3>
-                        <h3><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/jihene-gharsalli-80000b25b/" style="color: #eee;">linkedin</a></h3>
-                        <h3><i class="fab fa-github"></i><a href="https://www.github.com/jihenegharsalli" style="color: #eee;">Github</a></h3>
+                        <h3><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/jihene-gharsalli-80000b25b/" target="_blank" style="color: #eee;">linkedin</a></h3>
+                        <h3><i class="fab fa-github"></i><a href="https://www.github.com/jihenegharsalli" target="_blank" style="color: #eee;">Github</a></h3>
                     </div>
                 </div>
 

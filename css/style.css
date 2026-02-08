@@ -528,7 +528,23 @@ header .navbar ul li a:hover{
     padding: 20px;
     border-radius: 8px;
 }
-
+.coin {
+    display: inline-block;
+    perspective: 1000px;
+  }
+  
+  .coin img {
+    display: block;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .coin:hover img {
+    transform: rotateY(180deg);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 /* .logo1 {
     width: 100px; 
     height: auto;
@@ -645,8 +661,17 @@ body#home .logo1 {
     font-size: 24px;
     cursor: pointer;
     color: #333;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px black solid;
+    line-height: 27px;
 }
-
+.custom-li{
+    max-width: 250px;
+    margin: auto;
+}
 .project-details {
     display: flex;
 }
